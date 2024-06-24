@@ -1,0 +1,407 @@
+/* Body and General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #ccc;
+    background-color: #121212;
+    line-height: 1.6;
+}
+
+
+
+/* Header */
+header {
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(58, 56, 56, 0.1);
+}
+
+header img {
+    height: 30px;
+    width: 30px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Reduce the font size of the brand */
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #6eff8c;
+    transition: color 0.3s ease;
+    text-align: center; /* Center align the brand text */
+}
+
+.navbar-brand:hover {
+    color: #4ca66b;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #cfcfcf;
+    font-size: 1rem; /* Reduce the font size of the links */
+    padding: 0.5rem 1rem; /* Adjust padding to reduce size */
+    transition: color 0.3s ease;
+    text-align: center; /* Center align the nav links */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #6eff8c;
+}
+
+.dropdown-menu {
+    background-color: #333;
+}
+
+.dropdown-item {
+    color: #cfcfcf;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #cfcfcf;
+    color: #1e1e1e;
+}
+
+.form-control {
+    background-color: #333;
+    border-color: #555;
+    color: #cfcfcf;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #6eff8c;
+    box-shadow: 0 0 0 0.2rem rgba(110, 255, 140, 0.5);
+}
+
+.btn {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-outline-success {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-success:hover {
+    background-color: rgba(110, 255, 140, 0.5); /* Lighter green on hover */
+    color: #fff; /* Dark text on hover */
+    border-color: rgba(110, 255, 140, 0.5); /* Lighter border on hover */
+}
+
+
+/* Custom styles for specific elements */
+
+.search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align the search wrapper content */
+    width: 100%;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #555;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 200px;
+    color: #cfcfcf;
+    background-color: #333;
+    text-align: center; /* Center align the text in search input */
+}
+
+.search-input:focus {
+    border-color: #6eff8c;
+}
+
+.search-btn {
+    padding: 10px 20px; /* Adjust button padding */
+    font-size: 1rem;
+    background-color: rgba(110, 255, 140, 0.3); /* Glassy green background */
+    border: none;
+    color: #fff; /* White text */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.search-btn:hover {
+    background-color: rgba(110, 255, 140, 0.5); /* Lighter green on hover */
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #6eff8c;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
+/* Main Content and Sidebar Styling */
+main {
+    background-color: #1e1e1e;
+    color: #ccc;
+    padding: 40px 0;
+}
+
+.section-title {
+    color: #6eff8c;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.section-content {
+    color: #cfcfcf;
+    line-height: 1.8;
+}
+
+/* Bootstrap Grid System for Main Content and Sidebar */
+.main-content {
+    padding-top: 30px;
+}
+
+.sidebar {
+    background-color: #333;
+    color: #ccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sidebar h3 {
+    color: #6eff8c;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.sidebar-content {
+    color: #cfcfcf;
+    line-height: 1.8;
+}
+
+.card {
+    background-color: #333;
+    color: #ccc;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    color: #6eff8c;
+    font-size: 1.2rem;
+}
+
+.card-text {
+    color: #cfcfcf;
+}
+
+.btn-primary {
+    background-color: #4ca66b;
+    border-color: #444;
+    color: #fff;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #4ca66b;
+    border-color: #4ca66b;
+}
+
+.btn-outline-dark {
+    color: #ccc;
+    border-color: #ccc;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.btn-outline-dark:hover {
+    color: #fff;
+    background-color: #555;
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-item:hover {
+    background-color: #444;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 992px) {
+    .sidebar {
+        position: sticky;
+        top: 80px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .main-content {
+        padding-top: 20px;
+    }
+}
+
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        text-align: center; /* Center align the navigation links */
+        background-color: #121212;
+        display: none;
+        z-index: 1000;
+    }
+    .form-inline{
+        flex-direction: column;
+    }
+
+    .form-control {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .search-wrapper {
+        width: 100%;
+        padding: 5px 20px;
+        justify-content: center; /* Center align search wrapper content */
+    }
+
+    .search-input {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .burger {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: #6eff8c;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+
+    /* User Profile Dropdown Styling */
+    .user-avatar {
+        height: 25px; /* Adjust size as needed */
+        width: 25px; /* Adjust size as needed */
+        border-radius: 50%; /* Rounded avatar */
+        margin-right: 8px; /* Spacing between avatar and text */
+    }
+
+    .dropdown-menu {
+        background-color: #333;
+        display: none; /* Hide dropdown menu by default */
+        transition: all 0.3s ease; /* Add transition for smooth animation */
+        text-align: center;
+    }
+
+    .dropdown-menu-right {
+        right: 0;
+        left: auto;
+    }
+    
+
+    .dropdown-divider {
+        margin: 0.5rem 0;
+        border-color: #555;
+    }
+}
+
+/* Footer */
+footer {
+    margin-top: 20px; /* Adjust margin as needed */
+    background-color: #121212;
+    color: #ccc;
+    padding: 20px 0;
+}
+
+footer p {
+    margin-bottom: 0; /* Remove default margin */
+}
+footer h5 {
+    color: #6eff8c; /* Accent color for heading */
+    font-size: 1.2rem; /* Adjust heading font size */
+}
+
+footer p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+}
+
+footer ul li {
+    text-decoration: none;
+    margin-bottom: 8px; /* Adjust spacing between list items */
+}
+
+footer li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer li a::before{
+    color:#fff;
+}
+
+footer li a:hover{
+    text-decoration: none;
+    color: #4ca66b;
+}
+
+footer li a::after{
+    color: #4ca66b;
+}
+
+footer form {
+    margin-bottom: 15px; /* Adjust margin below the form */
+}
+
+footer .btn-outline-light {
+    background-color: rgba(110, 255, 140, 0.3); /* Glassy green background */
+    border-color: rgba(110, 255, 140, 0.3);
+    color: #fff; /* White text */
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+footer .btn-outline-light:hover {
+    background-color: rgba(110, 255, 140, 0.5); /* Lighter green on hover */
+    color: #fff; /* Dark text on hover */
+    border-color: rgba(110, 255, 140, 0.5); /* Lighter border on hover */
+}
+
